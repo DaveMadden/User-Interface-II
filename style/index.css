@@ -1,1 +1,132 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of reset */
+
+/*defaults*/
+*{
+  box-sizing: border-box; /*respect the width*/
+  max-width: 100%; /*stops images from being larger than their parent*/
+  padding:0;
+  margin:0;
+  border: 1px solid grey;
+}
+
+html{
+  font-size:62.5%; /*makes 1 rem == 10px*/
+}
+body{
+  font-size:1.6rem; /*brings back to 16px, but responsive*/
+  color: #4F4F4F;
+  margin:2%;
+}
+/*end of defaults*/
+
+h1, h2, h3{
+    font-family: 'Old Standard TT', serif;
+    text-transform: uppercase;
+}
+a{
+    font-family: 'Fira Mono', monospace;
+    text-transform:lowercase;
+    text-decoration: none;
+    padding:3%;
+    text-align:center;
+}
+p{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+}
+h2{
+    font-size:3rem;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    /* align-content:center; */
+}
+header div{
+    width:40%;
+}
+
+header .right{
+    /* display:flex; */
+}
+nav{
+    align-content:center;
+    display:flex;
+    justify-content: space-between;
+}
+nav a, .hero div a{
+    border:1px solid black;
+    border-radius: 5px;
+}
+
+.hero{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    height:40vh;
+}
+.hero div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-height: 90%;
+    background-image: url("pics/hero.JPG");
+}
+
