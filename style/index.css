@@ -72,13 +72,13 @@ body{
 h1, h2, h3{
     font-family: 'Old Standard TT', serif;
     text-transform: uppercase;
+    text-align: center;
 }
 a{
     font-family: 'Fira Mono', monospace;
     text-transform:lowercase;
     text-decoration: none;
     padding:1%;
-    text-align:center;
     color: black;
 }
 p{
@@ -87,10 +87,10 @@ p{
 
 h1{
     font-size: 7rem;
-    text-align: center;
 }
 h2{
     font-size:3rem;
+    text-align:center;
 }
 
 header{
@@ -109,6 +109,7 @@ nav{
     align-content:center;
     display:flex;
     justify-content: space-between;
+    /* border: 1px black solid */
 }
 
 nav a, .hero div a, footer a{
@@ -160,4 +161,35 @@ footer {
     align-items: center;
     min-height: 100px;
 
+}
+
+/* 800PX BREAK POINT STYLES */
+@media (max-width: 800px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .gallery-item{
+        width:45%
+    }
+    h1{
+        font-size: 6rem;
+    }
+    header div {
+        width: 80%
+    }
+}
+
+/* 500PX BREAK POINT STYLES */
+@media (max-width: 500px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
 }
